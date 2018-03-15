@@ -1,14 +1,16 @@
 <?php
-$server = "localhost";
-$username = "root";
-$password = "Kristingk7";
-$db = "db_clientaddressbook";
 
-//create a connection
-$conn = mysql_connect( $server, $username, $password, $db);
+$server     = "localhost";
+$username   = "root";
+$password   = "root";
+$db         = "db_clientaddressbook";
 
-//check connections
-if (!conn) {
-  die("Connection failed: " . mysqli_connect_error() );
+// create a connection
+$conn = mysqli_connect( $server, $username, $password, $db );
+
+// check connection
+if( !$conn ) {
+    die( "Connection failed: " . mysqli_connect_error() );
 }
- ?>
+
+?>
